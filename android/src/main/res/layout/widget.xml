@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:padding="8dp"
+    android:layout_width="120dp"
+    android:layout_height="120dp">
+    <ImageView
+        android:alpha="0.4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/logo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="请配置物品"
+        android:textColor="#828282"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="4dp"
+        android:text="--"
+        android:textColor="#eb5757"
+        android:textSize="32sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/days"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/days"
+        android:text="天"
+        android:textColor="#828282" />
+
+
+</RelativeLayout>
