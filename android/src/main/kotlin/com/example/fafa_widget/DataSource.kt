@@ -97,7 +97,7 @@ object DataSource {
         today.clear(Calendar.SECOND)
         today.clear(Calendar.MILLISECOND)
         val between_days: Long = (d!!.time - today.time.time) / (1000 * 3600 * 24)
-        return between_days.toInt()
+        return between_days.toInt() + 1
     }
 
 
