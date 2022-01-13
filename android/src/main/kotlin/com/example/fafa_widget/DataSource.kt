@@ -91,11 +91,10 @@ object DataSource {
             return 0
         }
         val d = format.parse(date)
+        val now = Calendar.getInstance(Locale.CHINA)
         val today = Calendar.getInstance(Locale.CHINA)
-        today.clear(Calendar.HOUR_OF_DAY)
-        today.clear(Calendar.MINUTE)
-        today.clear(Calendar.SECOND)
-        today.clear(Calendar.MILLISECOND)
+        today.clear()
+        today.set(now.get(Calendar.YEAR),now.get(Calendar.MONTH),now.get(Calendar.DATE))
         val between_days: Long = (d!!.time - today.time.time) / (1000 * 3600 * 24).toLong()
         return between_days.toInt()
     }
