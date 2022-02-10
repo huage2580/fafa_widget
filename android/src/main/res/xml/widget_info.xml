@@ -2,7 +2,7 @@
 <appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
     android:minWidth="120dp"
     android:minHeight="120dp"
-    android:updatePeriodMillis="36000000"
+    android:updatePeriodMillis="3600000"
     android:previewImage="@drawable/preview"
     android:initialLayout="@layout/widget"
     android:configure="com.example.fafa_widget.WidgetConfigureActivity"
