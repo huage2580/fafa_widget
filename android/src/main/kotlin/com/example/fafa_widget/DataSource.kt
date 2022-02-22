@@ -38,7 +38,7 @@ object DataSource {
         }
         //查询数据
         val result = ArrayList<ItemBean>()
-        val helper = SQLHelper(context,dbFile.absolutePath,null,7)
+        val helper = SQLHelper(context,dbFile.absolutePath,null,8)
         val db = helper.readableDatabase
         val c = db.rawQuery("SELECT id,name,out_date FROM item WHERE out_date is NOT NULL ORDER BY id DESC", emptyArray())
         while (c.moveToNext()){
