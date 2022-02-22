@@ -28,6 +28,7 @@ import java.util.*
  */
 object DataSource {
     val format = SimpleDateFormat("yyyy-MM-dd", Locale.CHINA)
+    val version = 8
 
 
     fun queryAllItem(context:Context):ArrayList<ItemBean>{
@@ -38,7 +39,7 @@ object DataSource {
         }
         //查询数据
         val result = ArrayList<ItemBean>()
-        val helper = SQLHelper(context,dbFile.absolutePath,null,8)
+        val helper = SQLHelper(context,dbFile.absolutePath,null,version)
         val db = helper.readableDatabase
         val c = db.rawQuery("SELECT id,name,out_date FROM item WHERE out_date is NOT NULL ORDER BY id DESC", emptyArray())
         while (c.moveToNext()){
@@ -65,7 +66,7 @@ object DataSource {
         }
         //查询数据
         var result: ItemBean? = null
-        val helper = SQLHelper(context,dbFile.absolutePath,null,5)
+        val helper = SQLHelper(context,dbFile.absolutePath,null,version)
         val db = helper.readableDatabase
         val c = db.rawQuery("SELECT id,name,out_date FROM item WHERE out_date is NOT NULL AND id = $itemId", emptyArray())
         while (c.moveToNext()){
