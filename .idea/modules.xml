@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/fafa_widget.iml" filepath="$PROJECT_DIR$/fafa_widget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/fafa_widget_android.iml" filepath="$PROJECT_DIR$/android/fafa_widget_android.iml" />
     </modules>
   </component>
 </project>
