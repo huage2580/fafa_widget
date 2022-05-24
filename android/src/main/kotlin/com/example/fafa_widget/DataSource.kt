@@ -28,7 +28,7 @@ import java.util.*
  */
 object DataSource {
     val format = SimpleDateFormat("yyyy-MM-dd", Locale.CHINA)
-    val version = 10
+    val version = 11
 
 
     fun queryAllItem(context:Context):ArrayList<ItemBean>{
