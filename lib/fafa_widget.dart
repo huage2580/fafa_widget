@@ -15,14 +15,4 @@ class FafaWidget {
     final String? version = await _channel.invokeMethod('update');
     return version;
   }
-
-  static Future<String?> light() async{
-    final String? version = await _channel.invokeMethod('statusBarIconLight');
-    return version;
-  }
-
-  static Future<String?> dark() async{
-    final String? version = await _channel.invokeMethod('statusBarIconDark');
-    return version;
-  }
 }
