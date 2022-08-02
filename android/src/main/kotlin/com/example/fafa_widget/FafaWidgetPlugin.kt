@@ -70,10 +70,10 @@ class FafaWidgetPlugin : FlutterPlugin, MethodCallHandler {
         window.decorView.systemUiVisibility = flag
     }
 
-//    override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
-//        channel.setMethodCallHandler(null)
-//        context = null
-//    }
+    override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
+        channel.setMethodCallHandler(null)
+        context = null
+    }
 //
 //    override fun onAttachedToActivity(p0: ActivityPluginBinding) {
 //        activity = p0.activity
