@@ -15,7 +15,7 @@ import io.flutter.plugin.common.MethodChannel.Result
 
 
 /** FafaWidgetPlugin */
-class FafaWidgetPlugin : FlutterPlugin, MethodCallHandler {
+class FafaWidgetPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
     /// The MethodChannel that will the communication between Flutter and native Android
     ///
     /// This local reference serves to register the plugin with the Flutter Engine and unregister it
@@ -74,20 +74,20 @@ class FafaWidgetPlugin : FlutterPlugin, MethodCallHandler {
         channel.setMethodCallHandler(null)
         context = null
     }
-//
-//    override fun onAttachedToActivity(p0: ActivityPluginBinding) {
-//        activity = p0.activity
-//    }
-//
-//    override fun onDetachedFromActivityForConfigChanges() {
-//        TODO("Not yet implemented")
-//    }
-//
-//    override fun onReattachedToActivityForConfigChanges(p0: ActivityPluginBinding) {
-//        TODO("Not yet implemented")
-//    }
-//
-//    override fun onDetachedFromActivity() {
-//        activity = null
-//    }
+
+    override fun onAttachedToActivity(p0: ActivityPluginBinding) {
+        activity = p0.activity
+    }
+
+    override fun onDetachedFromActivityForConfigChanges() {
+        TODO("Not yet implemented")
+    }
+
+    override fun onReattachedToActivityForConfigChanges(p0: ActivityPluginBinding) {
+        TODO("Not yet implemented")
+    }
+
+    override fun onDetachedFromActivity() {
+        activity = null
+    }
 }
