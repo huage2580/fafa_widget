@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fafa_widget.iml" filepath="$PROJECT_DIR$/.idea/modules/fafa_widget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fafa_widget.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/fafa_widget.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fafa_widget.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fafa_widget.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fafa_widget.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/fafa_widget.unitTest.iml" />
     </modules>
   </component>
 </project>
